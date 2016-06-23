@@ -1,0 +1,22 @@
+{
+  "name": "haskell-minecraft-bot",
+  "version": "0.0.1",
+  "description": "Mineflayer bot written in haskell",
+  "main": "js/Main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthewfranglen/haskell-minecraft-bot.git"
+  },
+  "author": "Matthew Franglen",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/matthewfranglen/haskell-minecraft-bot/issues"
+  },
+  "homepage": "https://github.com/matthewfranglen/haskell-minecraft-bot",
+  "dependencies": {
+    "mineflayer": "^1.7.5"
+  }
+}
