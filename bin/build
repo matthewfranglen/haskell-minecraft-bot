@@ -1,0 +1,11 @@
+#!/bin/bash
+
+set -euo pipefail
+
+readonly COMMAND="$(readlink -f "${BASH_SOURCE}")"
+readonly BIN_DIRECTORY="$(dirname "${COMMAND}")"
+readonly ROOT_DIRECTORY="$(dirname "${BIN_DIRECTORY}")"
+
+cd "${ROOT_DIRECTORY}"
+
+HASKELL_PACKAGE_SANDBOX=$(echo .cabal-sandbox/*packages.conf.d) .cabal-sandbox/bin/fay -o js/Main.js src/Main.hs

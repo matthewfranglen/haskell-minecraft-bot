@@ -1,0 +1,13 @@
+#!/bin/bash
+
+set -euo pipefail
+
+readonly COMMAND="$(readlink -f "${BASH_SOURCE}")"
+readonly BIN_DIRECTORY="$(dirname "${COMMAND}")"
+readonly ROOT_DIRECTORY="$(dirname "${BIN_DIRECTORY}")"
+
+cd "${ROOT_DIRECTORY}"
+
+cabal sandbox init
+cabal update
+cabal install
