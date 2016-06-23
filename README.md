@@ -9,6 +9,7 @@ Synopsis
 ### Install
 
 ```bash
+npm install
 cabal sandbox init
 cabal update
 cabal install

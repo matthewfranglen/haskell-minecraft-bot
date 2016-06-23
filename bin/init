@@ -8,6 +8,7 @@ readonly ROOT_DIRECTORY="$(dirname "${BIN_DIRECTORY}")"
 
 cd "${ROOT_DIRECTORY}"
 
+npm install
 cabal sandbox init
 cabal update
 cabal install
