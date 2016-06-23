@@ -16,5 +16,5 @@ Compile
 -------
 
 ```bash
-HASKELL_PACKAGE_SANDBOX=.cabal-sandbox/*packages.conf.d .cabal-sandbox/bin/fay src/Main.hs
+HASKELL_PACKAGE_SANDBOX=$(echo .cabal-sandbox/*packages.conf.d) .cabal-sandbox/bin/fay -o js/Main.js src/Main.hs
 ```

@@ -1,5 +1,5 @@
 module Main where
 
-main :: IO ()
+main :: Fay ()
 main = do
     putStrLn "Hello, World!"
